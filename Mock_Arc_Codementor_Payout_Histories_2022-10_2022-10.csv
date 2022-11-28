@@ -1,0 +1,13 @@
+Payout Date,Client,Type of Payment,Payment Created Date,Gross Amount (before fee),Platform Fee,Payout Amount
+"Oct 05, 2022",Jane Doe,Mentorship Session,"Sep 28, 2022",100.00,20.00,80.00
+"Oct 05, 2022",Silva,Mentorship Session,"Oct 01, 2022",100.00,20.00,80.00
+"Oct 05, 2022",John Doe,Mentorship Session,"Sep 16, 2022",100.00,20.00,80.00
+"Oct 12, 2022",Jane Doe,Direct Payment,"Oct 07, 2022",100.00,20.00,80.00
+"Oct 19, 2022",Jane Doe,Mentorship Session,"Oct 10, 2022",100.32,20.12,80.08
+"Oct 19, 2022",Jane Doe,Freelance Job,"Oct 13, 2022",100.32,20.12,80.08
+"Oct 19, 2022",John Doe,Mentorship Session,"Oct 15, 2022",100.32,20.12,80.08
+"Oct 19, 2022",John Doe,Mentorship Session,"Oct 16, 2022",100.32,20.12,80.08
+"Oct 19, 2022",John Doe,Mentorship Session,"Oct 16, 2022",100.32,20.12,80.08
+"Oct 26, 2022",John Doe,Mentorship Session,"Oct 17, 2022",100.32,20.12,80.08
+"Oct 26, 2022",Silva,Mentorship Session,"Oct 20, 2022",100.32,20.12,80.08
+"Oct 26, 2022",Silva,Mentorship Session,"Oct 23, 2022",100.32,20.12,80.08
