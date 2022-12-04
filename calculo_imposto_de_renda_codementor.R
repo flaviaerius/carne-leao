@@ -4,8 +4,6 @@ library(jsonlite)
 
 filename <- commandArgs(trailingOnly = T)
 
-filename <- "../Arc_Codementor_Payout_Histories_2021-11_2021-11.csv"
-
 file <- basename(filename)
 
 # Obter data a ser procurada
@@ -85,6 +83,8 @@ total_pay <- round(total_pay)
 real_gain <- total_brl - round(total_pay)
 
 real_gain <- gsub(".", ",", real_gain, fixed = T)
+
+paste0("Seu ganho sem impostos foi de R$", total_brl, ".")
 
 paste0("Você deve pagar R$", total_pay, ",00 de imposto para o mês ", month, ".")
 
