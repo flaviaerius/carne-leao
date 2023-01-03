@@ -82,12 +82,14 @@ total_pay <- round(total_pay)
 
 real_gain <- total_brl - round(total_pay)
 
+total_brl <- gsub(".", ",", total_brl, fixed = T)
+
 real_gain <- gsub(".", ",", real_gain, fixed = T)
 
-paste0("Seu ganho sem impostos foi de R$", total_brl, ".")
+paste0("Seu ganho sem impostos foi de R$ ", total_brl, ".")
 
-paste0("Você deve pagar R$", total_pay, ",00 de imposto para o mês ", month, ".")
+paste0("Você deve pagar R$ ", total_pay, ",00 de imposto para o mês ", month, ".")
 
-paste0("Seu ganho real é de R$", real_gain, ".")
+paste0("Seu ganho real é de R$ ", real_gain, ".")
 
 # TODO verificar se épossível criar testes unitários para o script
