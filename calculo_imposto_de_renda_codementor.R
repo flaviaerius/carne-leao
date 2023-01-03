@@ -86,10 +86,11 @@ total_brl <- gsub(".", ",", total_brl, fixed = T)
 
 real_gain <- gsub(".", ",", real_gain, fixed = T)
 
-paste0("Seu ganho sem impostos foi de R$ ", total_brl, ".")
+cat(paste0("Seu ganho sem impostos foi de R$ ", total_brl, ".\n"))
 
-paste0("Você deve pagar R$ ", total_pay, ",00 de imposto para o mês ", month, ".")
+cat(paste0("Você deve pagar R$ ", total_pay, ",00 de imposto para o mês ", 
+month, ".\n"))
 
-paste0("Seu ganho real é de R$ ", real_gain, ".")
+cat(paste0("Seu ganho real é de R$ ", real_gain, ".\n"))
 
 # TODO verificar se épossível criar testes unitários para o script
