@@ -90,4 +90,4 @@ paste0("Você deve pagar R$", total_pay, ",00 de imposto para o mês ", month, "
 
 paste0("Seu ganho real é de R$", real_gain, ".")
 
-# TODO verificarse épossível criar testes unitários para o script
+# TODO verificar se épossível criar testes unitários para o script
