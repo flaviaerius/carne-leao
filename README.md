@@ -36,6 +36,8 @@ Por fim, execute o script com o seu arquivo csv do codementor:
 
 Caso você não tenha R instalado na sua máquina e queira rodar mais rapidamente, pode criar a imagem docker para rodar o script. A criação da imagem só precisa ser feita uma vez.
 
+Para isso é necessário ter o __docker__ instalado. Caso não tenha, pode clicar no link https://docs.docker.com/engine/install/ e selecionar o seu sistema operacional para seguir as instruções adequadas de instalação da ferramenta.
+
 A partir do diretório __Dockerfile__, execute:
 
 ```{bash}
