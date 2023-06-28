@@ -1,0 +1,11 @@
+# CircleCI configuration file
+
+version: 2.1
+
+jobs:
+  build:
+    docker:
+    # Primary container image where all steps run
+     - image: rocker/verse:4.2.1
+    steps:
+      - run: echo 'It works!'
