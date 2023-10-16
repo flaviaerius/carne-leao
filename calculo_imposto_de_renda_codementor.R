@@ -15,7 +15,7 @@ month <- split_year_month[[1]][2]
 year <- split_year_month[[1]][1]
 
 # Obter mês anterior
-if(month != "1"){
+if(month != "01"){
   previous_month <- as.numeric(month) - 1
 } else {
   previous_month <- 12
