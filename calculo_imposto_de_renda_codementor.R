@@ -19,6 +19,7 @@ if(month != "1"){
   previous_month <- as.numeric(month) - 1
 } else {
   previous_month <- 12
+  year <- as.numeric(year) - 1
 }
 
 # Checar qual dia deve ser procurado (último dia útil da primeira quinzena)
@@ -91,5 +92,3 @@ paste0("Você deve pagar R$", total_pay, ",00 de imposto para o mês ", month, "
 paste0("Seu ganho real é de R$", real_gain, ".")
 
 # TODO verificarse épossível criar testes unitários para o script
-
-# TODO coletar dados novos docodementor e testar para outros meses e comparar com o q eu fiz na mão
