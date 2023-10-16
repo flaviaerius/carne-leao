@@ -15,11 +15,10 @@ month <- split_year_month[[1]][2]
 year <- split_year_month[[1]][1]
 
 # Obter mês anterior
-if(month != "01"){
+if(month != "1"){
   previous_month <- as.numeric(month) - 1
 } else {
   previous_month <- 12
-  year <- as.numeric(year) - 1
 }
 
 # Checar qual dia deve ser procurado (último dia útil da primeira quinzena)
@@ -95,4 +94,3 @@ month, ".\n"))
 cat(paste0("Seu ganho real é de R$ ", real_gain, ".\n"))
 
 # TODO verificar se épossível criar testes unitários para o script
-
