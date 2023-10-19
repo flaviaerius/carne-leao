@@ -15,11 +15,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Enter R"
-          command: "R"
-      - run:
-          name: "Install"
-          command: "install.packages('jsonlite')"
+          name: "Install jsonlite"
+          command: "Rscript install_jsonlite.R"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
