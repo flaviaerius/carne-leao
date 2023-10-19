@@ -15,7 +15,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Install jsonlite"
+          name: "Enter R"
+          command: "R"
+      - run:
+          name: "Install"
           command: "install.packages('jsonlite')"
 
 # Orchestrate jobs using workflows
