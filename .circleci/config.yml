@@ -5,7 +5,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
-  install-jsonlite:
+  calculate-mock:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
@@ -17,10 +17,16 @@ jobs:
       - run:
           name: "Install jsonlite"
           command: "Rscript install_jsonlite.R"
+      - run:
+          name: "Calculate mock codementor gains"
+          command: |
+            chmod +x ./calculo_imposto_de_renda_codementor.R
+            ./calculo_imposto_de_renda_codementor.R ./Mock_Arc_Codementor_Payout_Histories_2022-10_2022-10.csv
+      
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
-      - install-jsonlite
+      - calculate-mock
