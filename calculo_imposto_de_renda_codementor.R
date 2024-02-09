@@ -69,7 +69,7 @@ if(total_brl <= 1903.98){
   tax <- 0.15*total_brl
   deduction <- 354.8
   total_pay <- tax - deduction
-} else if(total_brl > 3751.05 & total_brl <= 4664.69){
+} else if(total_brl > 3751.05 & total_brl <= 4664.68){
   tax <- 0.225*total_brl
   deduction <- 636.13
   total_pay <- tax - deduction
