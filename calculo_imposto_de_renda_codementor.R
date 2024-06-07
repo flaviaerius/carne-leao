@@ -57,25 +57,25 @@ total <- sum(data[,colname_values])
 
 total_brl <- round(total*usd, 2)
 
-if(total_brl <= 1903.98){
+if(total_brl <= 2259.2){
   tax <- 0
   deduction <- 0
   total_pay <- 0
-} else if(total_brl > 1903.98 & total_brl <= 2826.65){
+} else if(total_brl > 2259.20 & total_brl <= 2826.65){
   tax <- 0.075*total_brl
-  deduction <- 142.8
+  deduction <- 169.44
   total_pay <- tax - deduction
 } else if(total_brl > 2826.65 & total_brl <= 3751.05){
   tax <- 0.15*total_brl
-  deduction <- 354.8
+  deduction <- 381.44
   total_pay <- tax - deduction
 } else if(total_brl > 3751.05 & total_brl <= 4664.68){
   tax <- 0.225*total_brl
-  deduction <- 636.13
+  deduction <- 662.77
   total_pay <- tax - deduction
 } else {
   tax <- 0.275*total_brl
-  deduction <- 869.36
+  deduction <- 896
   total_pay <- tax - deduction
 }
 
